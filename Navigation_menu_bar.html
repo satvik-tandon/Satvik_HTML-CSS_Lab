@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Menu with Dropdown</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e20000;
+            padding: 2px;
+            text-align: right;
+            padding-right: 3%;
+            font: tim;
+        }
+
+        nav {
+            background-color: #636363;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            padding-left: 2%;
+        }
+
+        nav a:hover {
+            background-color: #252525;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #252525;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: rgb(31, 40, 158);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Demo of Dropdown</h2>
+    </header>
+
+    <nav>
+        <a href="#">Link 1</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Link 2</button>
+            <div class="dropdown-content">
+                <a href="#">DD_Link_1</a>
+                <a href="#">DD_Link_2</a>
+                <a href="#">DD_Link_3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Link 3</button>
+            <div class="dropdown-content">
+                <a href="#">DD_Link_1</a>
+                <a href="#">DD_Link_2</a>
+                <a href="#">DD_Link_3</a>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

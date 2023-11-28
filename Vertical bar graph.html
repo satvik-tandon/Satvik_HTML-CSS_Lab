@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Bar Graph</title>
+    <style>
+        body {
+            height: 0%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #graph {
+            background-color: whitesmoke;
+            position: absolute;
+            top: 10%;
+            left: 40%;
+        }
+
+        #graph article {
+            display: inline-block;
+        }
+
+        div {
+            width: 40px;
+            height: 300px;
+            margin: 20px;
+            background-color: rgb(202, 198, 192);
+        }
+
+        p {
+            padding-left: 20px;
+        }
+
+        #b1 {
+            width: 100%;
+            height: 70%;
+            background-color: white;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-name: graph1;
+        }
+
+        @keyframes graph1 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+            100% {
+                height: 70%;
+                background-color: white;
+            }
+        }
+
+        #b2 {
+            width: 100%;
+            height: 60%;
+            background-color: white;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-name: graph2;
+        }
+
+        @keyframes graph2 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+            100% {
+                height: 60%;
+                background-color: white;
+            }
+        }
+
+        #b3 {
+            width: 100%;
+            height: 20%;
+            background-color: white;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-name: graph3;
+        }
+
+        @keyframes graph3 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+            100% {
+                height: 20%;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="graph">
+        <article>
+            <div>
+                <article id="b1"></article>
+            </div>
+            <p>30%</p>
+        </article>
+
+        <article>
+            <div>
+                <article id="b2"></article>
+            </div>
+            <p>40%</p>
+        </article>
+
+        <article>
+            <div>
+                <article id="b3"></article>
+            </div>
+            <p>80%</p>
+        </article>
+        <h1 style="text-align: center;">Bar Plot</h1>
+    </section>
+
+</body>
+
+</html>

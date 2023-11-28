@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Account Creation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        form {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border: 1px solid #504f4f;
+            border-radius: 7px;
+            height: 35vh;
+            position: relative;
+            top: 20%
+        }
+
+        form input {
+            width: calc(100% - 18px);
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        form input:focus {
+            background-color: rgba(70, 130, 180, 0.35);
+        }
+
+        form button {
+            width: 20%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 6px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 4%;
+            float: left;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        form input[type="reset"] {
+            width: 20%;
+            background-color: #f44336;
+            color: white;
+            padding: 6px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: left;
+        }
+
+        form input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 65vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form>
+            <h3>Create Gmail Account</h3>
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+
+            <input type="tel" id="contactNumber" name="contactNumber" placeholder="Contact Number" required>
+
+            <input type="email" id="email" name="email" placeholder="Enter Email ID" required>
+
+
+            <input type="reset" value="Reset">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
